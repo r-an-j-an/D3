@@ -1,0 +1,99 @@
+body{
+    margin:0px;
+    overflow: hidden;
+    background-color: #0d1117;
+}
+svg{
+    position: absolute;
+    right: 30px;
+    border: 1px solid #0F8C79;
+}
+select{
+    background-color: #EFECEA;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;;
+}
+select:hover{
+    background-color: #efefefc8;
+    border:3px solid darkgreen;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+select::selection{
+    background-color:red;
+}
+button{
+    color: white;
+    background-color:#0F8C79;
+    border: 1px solid white;
+    padding: 10px 40px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium';
+}
+button:hover{
+    background-color: white;
+    color: #0F8C79;
+}
+label{
+    /* color:white; */
+    font-weight: bold;
+    
+}
+.nameplate{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+    border-radius: 5px;
+    border:3px solid white;
+    background-color: #0d1117;
+    color: RGB(201, 208, 207);
+    padding: 10px;
+    text-align: center;
+}
+circle{
+    fill: #0F8C79;
+    opacity: 0.5;
+
+}
+h2{
+    margin-top:0 ;
+}
+span{
+    margin-top: 200px;
+    margin-left: 80px;
+    background-color: #0F8C79;
+    padding: 30px 20px ;
+    border:1px solid #4b4846 ;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+text{
+    font-size: 2.5em;
+    font-family:sans-serif;
+}
+
+.tick text{
+    fill:#635F5D;
+    font-size: 2em;
+}
+
+.tick line{
+    stroke:#C0C0BB;
+}
+
+.axis-label{
+    fill:#4b4846 ;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 18px;
+}
+.heading{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    font-weight: bold;
+    color:#4b4846;
+    
+}
