@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+}
+i{
+    cursor: pointer;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #151515;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-family: 'Sen', sans-serif;
+    color: #4dbf00;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    padding: 0 50px;
+    display:flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+}
+
+.logo-container{
+    flex:2;
+}
+.menu-container{
+    flex:6;
+}
+.menu-list{
+    display:flex;
+    list-style-type: none;
+}
+.menu-list-items{
+    cursor: pointer;
+    color:white;
+    margin-right: 30px;
+}
+.menu-list-items:active{
+    font-weight: bold;
+    color: #4dbf00;
+}
+.menu-list-items:hover{
+    border-bottom: 1px solid #4dbf00;
+}
+.profile-container{
+    flex:2;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.profile-text-container{
+    margin: 0 20px;
+}
+#hello{
+    font-size: 5em;
+}
+#para{
+    font-size: 1.5em;
+}
+.profile-picture{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 3px solid #4dbf00;
+    object-fit:cover;
+}
+.coloured-section{
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 20px 60px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 22px 23px rgba(0, 0, 0, 0.46);  
+}
+.coloured-section:hover{
+    box-shadow: 0px 0px 22px 23px rgba(83, 83, 83, 0.46);  
+}
+.container{
+    padding: 50px 100px;
+
+}
+#hello{
+    font-size: 5em;
+}
+.left-para{
+    width: 59%;
+    display: inline-block;
+    font-size: 2.5em;
+    
+}
+#map{
+    width: 40%;
+    display: inline-block;
+}
+.btn-dash{
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+.btn-dash:hover{
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+.data{
+    line-height: 4;
+}
