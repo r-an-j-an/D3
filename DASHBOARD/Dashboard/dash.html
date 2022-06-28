@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="d3.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+</head>
+
+<body onload="deaths();cases();vaccine()">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Covid-19 DashBoard</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-items active"><a href="../Home/Home.html">Home</a></li>
+                    <li class="menu-list-items"><a href="dash.html">DashBoard</a>
+                    </li>
+                    <li class="menu-list-items"><a href="../Home/About Us/About Us.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="images\profile.jpg" alt="ProfPic">
+                <div class="profile-text-container">
+                    <span class="profile-text">Aditya Ranjan</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="big-heading">Dashboard for Covid-19 Statistics</div>
+            <div class="para">Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+                <br>
+                The best way to prevent and slow down transmission is to be well informed about the disease and how the
+                virus spreads. <br>
+                Get
+                vaccinated when it’s your turn and follow local guidance. <br>
+            </div>
+            <div class="death-chart">
+                <div id="death-tooltip" class="hidden">
+                    <p><strong>Date -</strong></p>
+                    <p><span id="date"></span></p><br><br>
+                    <p><strong>Deaths -</strong></p>
+                    <p><span id="value"></span></p>
+                </div>
+                <svg width="1500" height="600" id="deaths"></svg>
+            </div>
+            <div class="cases-chart">
+                <div id="cases-tooltip" class="hidden">
+                    <p><strong>Date-</strong></p>
+                    <p><span id="datecases"></span></p><br><br>
+                    <p><strong>Cases-</strong></p>
+                    <p><span id="valcases"></span></p>
+                </div>
+                <svg width="1500" height="600" id="cases"></svg>
+            </div>
+            <div class="vaccine-chart">
+                <div id="vaccine-tooltip" class="hidden">
+                    <p><strong>Date-</strong></p>
+                    <p><span id="datevaccine"></span></p><br><br>
+                    <p><strong>Vaccinated-</strong></p>
+                    <p><span id="valvaccine"></span>*</p>
+                </div>
+                <svg width="1500" height="600" id="vaccine"></svg>
+                <p style="color:white;margin-left: 40px;">*The Vaccination details include the cummilative data of both
+                    doses and
+                    displays the No. of doses
+                    vaccinated</p>
+            </div>
+        </div>
+    </div>
+    <div class="para">Protect yourself and others from infection
+        by staying at least 1 metre apart from
+        others,
+        wearing a properly fitted mask, and washing your hands or using an alcohol-based rub frequently.
+    </div>
+    <div class="para" style="color:#C0C0BB;">
+        © Aditya-Ranjan
+    </div>
+</body>
+
+</html>
